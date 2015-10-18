@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="coches">
+        <item>Audi</item>
+        <item>Mercedes-Benz</item>
+        <item>Peugeot</item>
+        <item>Toyota</item>
+        <item>BMW</item>
+        <item>Ford</item>
+        <item>Citroen</item>
+    </string-array>
+</resources>
