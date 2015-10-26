@@ -7,22 +7,24 @@
 <RadioGroup
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+    android:id="@+id/radioGroup">
 
     <RadioButton
         android:layout_width="@dimen/radiobuttom"
         android:layout_height="wrap_content"
         android:text="@string/radiobutton1"
-        android:id="@+id/radioButton"
+        android:id="@+id/radioengadir"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:checked="true"/>
 
     <RadioButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/radiobutton2"
-        android:id="@+id/radioButton2"
+        android:id="@+id/radiosobreescribir"
         android:layout_alignTop="@+id/radioButton"
         android:layout_toRightOf="@+id/radioButton"
         android:layout_toEndOf="@+id/radioButton" />
@@ -30,9 +32,35 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="@string/hint"/>
+        android:hint="@string/hint"
+        android:id="@+id/textoeditado"
+        android:layout_below="@+id/radioGroup"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/boton"/>
+        android:text="@string/boton"
+        android:id="@+id/boton"
+        android:layout_below="@+id/textoeditado"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="Engadir_Sobreescribir"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/txtv"
+        android:layout_below="@+id/boton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="verdialogo"
+        android:text="Dialogo"
+        android:layout_below="@+id/txtv"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>

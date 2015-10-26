@@ -17,13 +17,19 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".segundaactividade"
-            android:label="@string/title_activity_segundaactividade" >
+            android:name=".listview"
+            android:label="@string/title_listview" >
         </activity>
         <activity
-            android:name=".segundaactividadespinner"
+            android:name=".spinner"
             android:label="@string/title_activity_segundaactividadespinner" >
         </activity>
     </application>
-
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 </manifest>
+
+
+
+
+
